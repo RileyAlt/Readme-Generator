@@ -1,38 +1,38 @@
 
-    # README Generator 
+    # rtgw
 
    
   ### Author
-  Riley
+  w
 
-  If you'd like to contact me, please email RileyAltenburg@gmail.com
+  If you'd like to contact me, please email vrt
   
    
    
   ### GitHub Information 
   
-  Find my Repository information here Riley_Alt
+  Find my Repository information here efvwr
   
 
    
   ### Description
 
-  My Motivation for the project was I wanted to stream line my Process when createing a very simple yet effective way to build out a proper ReadME with all requiresmen
-  The project was built To make ReadME files Easier than ever, and to ensure I always have the proper guidlines and licenses
-  This solved What a README file should look like
-  What I learn from the project was how to build a propert read me, and effectilvy apply Node to my skills
+  My Motivation for the project was brb
+  The project was built r
+  This solved br
+  What I learn from the project was r
   
 
    
   ### Installation 
 
-  If any what Items need to be installed to run properly? you must Run NPM I before completing, you must also have V16 of node downloaded
+  If any what Items need to be installed to run properly? br
   
 
    
   ### Usage 
 
-  The program runs as follows: 
+  The program runs as follows: br
   
 
    
@@ -44,13 +44,13 @@
    
   ### Contributors 
 
-    N/A
+    
   
 
    
   ### Testing
 
-    non
+    No
   
 
   

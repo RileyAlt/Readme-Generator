@@ -17,7 +17,7 @@ Find my Repository information here at: https://github.com/RileyAlt/Readme-Gener
 ### Description
 
 My Motivation for the project was I wanted to stream line my Process when createing a very simple yet effective way to build out a proper ReadME with all requiresmen
-The project was built To make ReadME files Easier than ever, and to ensure I always have the proper guidlines and licenses
+The project was built To make ReadME files easier than ever, and to ensure I always have the proper guidlines and licenses
 This solved What a README file should look like
 What I learn from the project was how to build a propert read me, and effectilvy apply Node to my skills
 
@@ -29,26 +29,22 @@ What I learn from the project was how to build a propert read me, and effectilvy
 
   ### Installation
 
-  If any what Items need to be installed to run properly? You must Run NPM I before completing, you must also have V16 of node downloaded.
+  If any what Items need to be installed to run properly? You must Run NPM Install or (NPM I) before starting your testing, you must also have V16 of node downloaded. onto your computer
 
   ### Usage
 
   The program runs as follows:
 
-  ```md
-  ![alt text](/Users/rileyaltenburg/bootcamp/mod9/Assets/Terminal Screenshot.png)
-  ```
+![alt text](./Assets/Terminal_Screenshot.png)
 
-  ```md
-  ![alt text](/Users/rileyaltenburg/bootcamp/mod9/Assets/Product example.png)
-  ```
+![alt text](./Assets/Product_example.png)
 
-  ### Licensing
+### Licensing
 
-  MIT
+MIT
 
-  ### Contributors
+### Contributors
 
-  None
+None
 
-  ### Testing
+### Testing

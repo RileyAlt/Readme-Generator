@@ -71,11 +71,11 @@ const QUESTIONS = [
       name: 'contributions',
       message: 'Please list any and all who contributed to the project'
     },
-
     {
-      type: 'input',
+      type: 'list',
       name: 'tests',
-      message: 'Any tests run? '
+      message: 'Any tests run?',
+      choices: ['Yes', 'No']
     },
   
 ];
