@@ -25,6 +25,11 @@ const QUESTIONS = [
       name: 'email',
       message: 'What email can be used to contact you?'
     },
+    // {
+    //   type: 'input',
+    //   name: 'tableOfContents',
+    //   message: 'What was the motivation for the project?'
+    // },
     {
       type: 'input',
       name: 'motivation',
@@ -58,7 +63,7 @@ const QUESTIONS = [
     {
       type: 'list',
       name: 'license',
-      message: 'WWhat license would you like to use?',
+      message: 'What license would you like to use?',
       choices: ['MIT', 'Apache', 'GPL']
     },
     {
@@ -95,6 +100,7 @@ function renderGitUser(answers) {
 function renderDescription(answers) {
   return `
   ### Description
+
   My Motivation for the project was ${answers.motivation}
   The project was built ${answers.building}
   This solved ${answers.solved}
@@ -105,6 +111,7 @@ function renderDescription(answers) {
 function renderInstallation(answers) {
   return `
   ### Installation 
+
   If any what Items need to be installed to run properly? ${answers.installation}
   `;
 }
@@ -112,6 +119,7 @@ function renderInstallation(answers) {
 function renderUsage(answers) {
   return `
   ### Usage 
+
   The program runs as follows: ${answers.usage}
   `;
 }
@@ -119,6 +127,7 @@ function renderUsage(answers) {
 function renderLicense(answers) {
   return `
   ### Licensing 
+
     ${answers.license}
   `;
 }
@@ -126,6 +135,7 @@ function renderLicense(answers) {
 function renderContributions(answers) {
   return `
   ### Contributors 
+
     ${answers.contributions}
   `;
 }
@@ -133,6 +143,7 @@ function renderContributions(answers) {
 function renderTests(answers) {
   return `
   ### Testing
+
     ${answers.tests}
   `;
 }
