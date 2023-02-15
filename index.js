@@ -2,6 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+
 // TODO: Create an array of questions for user input
 const QUESTIONS = [
     {
@@ -12,7 +13,12 @@ const QUESTIONS = [
     {
       type: 'input',
       name: 'name',
-      message: 'What is your name'
+      message: 'What is your name?'
+    },
+    {
+      type: 'input',
+      name: 'gituser',
+      message: 'What is your Github Username?'
     },
     {
       type: 'input',
@@ -42,7 +48,12 @@ const QUESTIONS = [
     {
       type: 'input',
       name: 'installation',
-      message: 'do you need to install anything to run your project?'
+      message: 'Do you need to install anything to run your project?'
+    },
+    {
+      type: 'input',
+      name: 'usage',
+      message: 'Show off how it works here: '
     },
     {
       type: 'list',
@@ -50,14 +61,34 @@ const QUESTIONS = [
       message: 'WWhat license would you like to use?',
       choices: ['MIT', 'Apache', 'GPL']
     },
-];
+    {
+      type: 'input',
+      name: 'contributions',
+      message: 'Please list any and all who contributed to the project'
+    },
 
+    {
+      type: 'input',
+      name: 'tests',
+      message: 'Any tests run? '
+    },
+  
+];
+//Correctly displaying asnwers on readme document
 function renderAuthorInfo(answers) {
   return `
   ### Author
   ${answers.name}
 
-  If you'd like to contact me, please email ${answers.email} or call ${answers.phoneNUmber}
+  If you'd like to contact me, please email ${answers.email}
+  `;
+}
+
+function renderGitUser(answers) {
+  return `
+  ### GitHub Information 
+  
+  Find my Repository information here ${answers.gituser}
   `;
 }
 
@@ -78,6 +109,35 @@ function renderInstallation(answers) {
   `;
 }
 
+function renderUsage(answers) {
+  return `
+  ### Usage 
+  The program runs as follows: ${answers.usage}
+  `;
+}
+
+function renderLicense(answers) {
+  return `
+  ### Licensing 
+    ${answers.license}
+  `;
+}
+
+function renderContributions(answers) {
+  return `
+  ### Contributors 
+    ${answers.contributions}
+  `;
+}
+
+function renderTests(answers) {
+  return `
+  ### Testing
+    ${answers.tests}
+  `;
+}
+
+
 function generateReadme(answers){
   // At this point, answers is a hash of question_names => entered values
   // Example: { titleOfProject: "README Generator", name: "Riley Altenburg", ... }
@@ -86,10 +146,20 @@ function generateReadme(answers){
     # ${answers.titleOfProject}
 
    ${renderAuthorInfo(answers)}
+   
+   ${renderGitUser(answers)}
 
    ${renderDescription(answers)}
 
    ${renderInstallation(answers)}
+
+   ${renderUsage(answers)}
+
+   ${renderLicense(answers)}
+
+   ${renderContributions(answers)}
+
+   ${renderTests(answers)}
 
   `;
 
@@ -106,7 +176,7 @@ function generateReadme(answers){
 function init() {
   console.log("Starting initialization of the app");
 
-  generateMarkdown();
+  // generateMarkdown();
 
   inquirer
     .prompt(QUESTIONS)
@@ -119,6 +189,7 @@ function init() {
       console.error(error);
     });
 }
+
 
 // Function call to initialize app
 init();
